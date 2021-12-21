@@ -68,7 +68,7 @@ namespace Com.MyCompany.MyGame
             if (targetTransform != null)
             {
                 targetPosition = targetTransform.position;
-                targetPosition.y += characterControllerHeight + offsetHeigth+2;
+                targetPosition.y += characterControllerHeight + offsetHeigth;
                 this.transform.position = Camera.main.WorldToScreenPoint (targetPosition) + screenOffset;
             }
         }       

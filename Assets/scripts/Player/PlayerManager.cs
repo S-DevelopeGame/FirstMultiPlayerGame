@@ -43,7 +43,7 @@ namespace Com.MyCompany.MyGame
 
         [SerializeField] string triggeringTag;
 
-        private Animator animator;
+        //private Animator animator;
         //True, when the user is firing
         bool IsFiring;
 
@@ -56,7 +56,7 @@ namespace Com.MyCompany.MyGame
         /// </summary>
         public void Awake()
         {
-            animator = gameObject.GetComponent<Animator>();
+            //animator = gameObject.GetComponent<Animator>();
             if (this.beams == null)
             {
                 Debug.LogError("<Color=Red><b>Missing</b></Color> Beams Reference.", this);
@@ -165,7 +165,8 @@ namespace Com.MyCompany.MyGame
                 if (!this.IsFiring)
                 {
                     this.IsFiring = true;
-                    animator.SetBool("Attack", true);
+                    
+                    //animator.SetBool("Attack", true);
                 }
             }
 
@@ -174,7 +175,8 @@ namespace Com.MyCompany.MyGame
                 if (this.IsFiring)
                 {
                     this.IsFiring = false;
-                    animator.SetBool("Attack", false);
+                    
+                    //animator.SetBool("Attack", false);
                 }
                
             }

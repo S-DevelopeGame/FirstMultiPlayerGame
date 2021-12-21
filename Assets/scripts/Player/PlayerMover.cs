@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Com.MyCompany.MyGame;
 
 /**
  * This component moves its object when the player clicks the arrow keys and use mouse.
@@ -22,14 +23,14 @@ public class PlayerMover : MonoBehaviourPun
     [SerializeField] private KeyCode sprint;
     private float currentSpeed;
 
-    private Animator animator;
+    //private Animator animator;
 
 
     private void Awake()
     {
         // #Critical
         // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
-        animator = gameObject.GetComponent<Animator>();
+        //animator = gameObject.GetComponent<Animator>();
         DontDestroyOnLoad(this.gameObject);
         controller = GetComponent<CharacterController>();
     }
@@ -58,7 +59,8 @@ public class PlayerMover : MonoBehaviourPun
         float rotX = Input.GetAxis("Mouse X");
         float rotY = Input.GetAxis("Mouse Y");
 
-        animator.SetFloat("Speed", Mathf.Abs(horizontal+vertical));
+        
+        //animator.SetFloat("Speed", Mathf.Abs(horizontal+vertical));
 
         
 
