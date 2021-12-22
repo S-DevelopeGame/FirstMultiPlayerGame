@@ -5,11 +5,14 @@
 ## הוספת מגן
 הוספנו מגן לזירת המשחק שאותו יוכל השחקן לקחת ולהגן על עצמו מפני השחקן היריב,
  כאשר יקח את המגן הוא יהיה מוגן מקרני הלייזר ולא ירדו לו חיים במשחק.
+ למגן הוספנו Photon Trasnform View ו Photon View.
 [shield](https://github.com/S-DevelopeGame/FirstMultiPlayerGame/blob/master/Assets/scripts/Player/PlayerManager.cs).
+[TimedSpawnerRandom](https://github.com/S-DevelopeGame/FirstMultiPlayerGame/blob/master/Assets/scripts/Player/TimedSpawnerRandom.cs).
+[CollisionShield](https://github.com/S-DevelopeGame/FirstMultiPlayerGame/blob/master/Assets/scripts/CollisionShield.cs).
 
 ## הוספת אנימציה
 הוספנו אנימציה לשחקן בדמות של רובוט שיורה חצי לייזר.
- הוספנו photon animator view
+ הוספנו photon animator view, את תכונות האנימציה ב playerManager. 
  
 
 ## הוראות המשחק:
